@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Compraventa</title>
+    <link rel="stylesheet" href="styles/main.css"> <!-- Tu CSS personalizado -->
+</head>
+<body>
+
+    <header class="bg-primary text-white p-3">
+        <h1>Bienvenido a la Plataforma de Compraventa</h1>
+        <nav>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link text-white" href="#" onclick="mostrarVista('inicio')">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#" onclick="mostrarVista('productos')">Productos</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#" onclick="mostrarVista('carrito')">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>   
+
+    <main class="container mt-4">
+        <!-- Vista Inicio -->
+        <div id="vista-inicio" class="vista">
+            <h2>Explora nuestros productos</h2>
+            <p>Bienvenido a nuestra plataforma, selecciona una opción del menú para comenzar.</p>
+        </div>
+
+        <!-- Vista Productos -->
+        <div id="vista-productos" class="vista" style="display: none;">
+            <h2>Productos</h2>
+            <div id="productos" class="row">
+                <!-- Aquí se renderizarán los productos dinámicamente -->
+            </div>
+        </div>
+
+        <!-- Vista Carrito -->
+        <div id="vista-carrito" class="vista" style="display: none;">
+            <h2>Carrito</h2>
+            <ul id="carrito" class="list-group">
+                <!-- Aquí se renderizarán los artículos del carrito -->
+            </ul>
+            <p class="mt-3">Total: $<span id="total">0.00</span></p>
+        </div>
+    </main>
+
+    <footer class="text-center mt-4">
+        <p>&copy; 2024 Plataforma de Compraventa</p>
+    </footer>
+
+    
+    <!-- Scripts JS -->
+    <script src="./scripts/main.js"></script> <!-- Lógica principal -->
+    <script src="./scripts/productos.js"></script> <!-- Lógica de productos -->
+    <script src="./scripts/carrito.js"></script> <!-- Lógica del carrito -->
+</body>
+</html>
