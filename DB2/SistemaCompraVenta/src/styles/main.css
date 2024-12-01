@@ -14,8 +14,3 @@ body {
 .list-group-item {
     border-radius: 5px;
 }
-
-.ilike-blue-container {
-    @extend .cyan, .lighten-4;
-}
-
